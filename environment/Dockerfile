@@ -1,4 +1,3 @@
-# hash:sha256:dc2ec57d70565273fd8fa808c466fa9cc8a916471d98199adb82462e36b1b25d
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
