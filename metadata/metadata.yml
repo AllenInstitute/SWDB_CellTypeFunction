@@ -1,5 +1,9 @@
 metadata_version: 1
-name: aind-capsule-template
-description: Basic structure of a capsule to be customized as needed.
+name: SWDB_CellTypesFunction
+description: Capsule for demonstrating 
 authors:
-- name: AIND
+- name: Forrest Collman
+- name: Anamika Agrawal
+- name: Lu Mi
+- name: Casey Schneider-Mizell
+- name: Michael Buice
