@@ -1,4 +1,4 @@
-# hash:sha256:404e9736537f95500d023d9cffb3559f13983327e1a243ad8bd168cad83f8ea8
+# hash:sha256:ee89296c18150fc40f76a0abcc991906d1cf38e92761a4f5a392865c6e83cfac
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -15,3 +15,6 @@ RUN conda install -y \
         numpy==1.25.1 \
         seaborn==0.12.2 \
     && conda clean -ya
+
+RUN pip install -U --no-cache-dir \
+    caveclient==5.7.0

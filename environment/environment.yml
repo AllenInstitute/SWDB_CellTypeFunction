@@ -1,0 +1,7 @@
+environment_version: 1
+credentials:
+- type: api-key
+  id: 3Q7zlctWWuh2zV
+  description: Cave client credentials
+  key: API_KEY
+  secret: API_SECRET
