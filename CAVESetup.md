@@ -43,15 +43,19 @@ In this case you want to.
    
 * Click on User Secrets
 * Click on Add Secret>API Credentials in upper right
+
     ![api_creds](workshop2/images/api_creds.png)
   
-* Give your token a name, put "CAVE_TOKEN" for key and your token as value
+* Give your token a name, put "CAVE_TOKEN" for key and your token as value (no quotes)
+
    ![api_creds](workshop2/images/cave_token.png)
 
 * Click on environment in your capsule
+
     ![environment](workshop2/images/environment.png)
 
 * Scroll down to the secrets section and select your API credential
+
     ![secrets](workshop2/images/secrets.png)
  
 
