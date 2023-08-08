@@ -1,4 +1,4 @@
-# hash:sha256:ee89296c18150fc40f76a0abcc991906d1cf38e92761a4f5a392865c6e83cfac
+# hash:sha256:8fb29d2166fe47a7da20227fa22a61ec2fd7e8154309e44e6697d6ff285e356e
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -13,6 +13,7 @@ RUN conda install -y \
         matplotlib==3.7.2 \
         notebook==6.5.4 \
         numpy==1.25.1 \
+        scikit-learn \
         seaborn==0.12.2 \
     && conda clean -ya
 
