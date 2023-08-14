@@ -1,4 +1,4 @@
-# hash:sha256:5505bb1c57ca5e415f9102b36f7a6f40ea335b9e2a968e737f8887877c52b43a
+# hash:sha256:eed1cadc5514455cd3dcaa8c62101554872c4884ef3e8d4ecd2d20d623efabb7
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -18,4 +18,4 @@ RUN conda install -y \
     && conda clean -ya
 
 RUN pip install -U --no-cache-dir \
-    caveclient==5.8.3
+    caveclient
