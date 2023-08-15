@@ -34,33 +34,36 @@ In this case you want to.
     * Log in with your Google credentials and copy the token shown afterward.
        Note: If you need to save or load multiple tokens, please read the documentation for details.
    
-4. If codeocean: copy token into a api credential secret, and mount to capsule.
+4a. If codeocean (if not use step 4b): copy token into a api credential secret, and mount to capsule using the following steps
    
 * Copy token to clipboard
-* Click on User Settings icon, left hand side, most of the way down
+* Got to User Settings on code ocean (<a href="https://codeocean.allenneuraldynamics.org/account" target="_blank">click this link</a> to open in a new tab so you can get back here to see instructions).
 
-   ![user_settings](workshop2/images/user_settings.png)
+  This is where it is on your screen, but don't just click here because then you will not be able to see the instructions.
+
+   ![user_settings](code/workshop2/images/user_settings.png)
    
 * Click on User Secrets
 * Click on Add Secret>API Credentials in upper right
 
-    ![api_creds](workshop2/images/api_creds.png)
+    ![api_creds](code/workshop2/images/api_creds.png)
   
 * Give your token a name, put "CAVE_TOKEN" for key and your token as value (no quotes)
 
-   ![api_creds](workshop2/images/cave_token.png)
+   ![api_creds](code/workshop2/images/cave_token.png)
 
 * Click on environment in your capsule
 
-    ![environment](workshop2/images/environment.png)
+    ![environment](code/workshop2/images/environment.png)
 
 * Scroll down to the secrets section and select your API credential
 
-    ![secrets](workshop2/images/secrets.png)
+    ![secrets](code/workshop2/images/secrets.png)
  
 
 * Your CAVE token should now be available in your capsule as an environment variable "API_SECRET"
-6. If own computer: Save the token to a file on your computer so caveclient can read it using this caveclient command
+
+4b. If NOT code ocean computer: Save the token to a file on your computer so caveclient can read it using this caveclient command
 
 ```
     client=CAVEclient()
