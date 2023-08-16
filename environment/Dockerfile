@@ -1,4 +1,4 @@
-# hash:sha256:32f9d5bb95200e22fe1841a9e0c05ba8bed74eac792619f59bfe11e97e2a772e
+# hash:sha256:58cffce772d9c29ebd434bb2738a402c90330a0fe9c970a9c23565358d364079
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -17,6 +17,7 @@ RUN conda install -y \
         numpy==1.25.2 \
         pip==23.2.1 \
         scikit-learn==1.3.0 \
+        seaborn==0.12.2 \
         setuptools==65.6.3 \
     && conda clean -ya
 
