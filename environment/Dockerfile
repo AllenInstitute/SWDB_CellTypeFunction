@@ -1,4 +1,4 @@
-# hash:sha256:e89053ed084391f26d3981516535e26522b37a3229bb50557e33a801457ca109
+# hash:sha256:d418351bdff30b0f3563524eb2428c8bb56ba7a6422b72581a88daf17f0be911
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -9,20 +9,19 @@ COPY git-askpass /
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        build-essential \
+        build-essential=12.8ubuntu1.1 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN conda install -y \
         conda==23.3.1 \
     && conda clean -ya
 RUN conda install -y \
-        jupyter \
-        jupyterlab \
-        matplotlib \
-        notebook \
-        numpy \
-        pip \
-        python-spams \
+        jupyter==1.0.0 \
+        jupyterlab==3.6.1 \
+        matplotlib==3.7.1 \
+        notebook==6.5.3 \
+        numpy==1.25.2 \
+        pip==23.2.1 \
         scikit-learn==1.3.0 \
         setuptools==65.6.3 \
     && conda clean -ya
