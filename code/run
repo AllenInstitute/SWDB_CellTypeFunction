@@ -7,9 +7,40 @@ jupyter nbconvert \
 	--ExecutePreprocessor.allow_errors=True \
 	--ExecutePreprocessor.timeout=-1 \
 	--FilesWriter.build_directory=../results \
-	--execute exercises/ExploringSingleCellConnectivityCorrelations.ipynb
+	--execute workshop2/solutions/workshop2.ipynb
 
 # The previous version of this file was commented-out and follows below:
 #
-# python -u run_capsule.py "$@"
+jupyter nbconvert \
+	--to 'html' \
+	--ExecutePreprocessor.allow_errors=True \
+	--ExecutePreprocessor.timeout=-1 \
+	--FilesWriter.build_directory=../results \
+	--execute exercises/solutions/ExploringSingleCellConnectivityCorrelations.ipynb
+
+jupyter nbconvert \
+	--to 'html' \
+	--ExecutePreprocessor.allow_errors=True \
+	--ExecutePreprocessor.timeout=-1 \
+	--FilesWriter.build_directory=../results \
+	--execute exercises/solutions/Space.ipynb
+
+jupyter nbconvert \
+	--to 'html' \
+	--ExecutePreprocessor.allow_errors=True \
+	--ExecutePreprocessor.timeout=-1 \
+	--FilesWriter.build_directory=../results \
+	--execute exercises/solutions/SynapseWeight.ipynb
+
+jupyter nbconvert \
+	--to 'html' \
+	--ExecutePreprocessor.allow_errors=True \
+	--ExecutePreprocessor.timeout=-1 \
+	--FilesWriter.build_directory=../results \
+	--execute exercises/solutions/ExploringStructuralClustering.ipynb
+# 
+# # The previous version of this file was commented-out and follows below:
+# #
+# # python -u run_capsule.py "$@"
+# # 
 # 

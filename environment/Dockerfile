@@ -1,4 +1,4 @@
-# hash:sha256:f495871d43a67be9cc64abd1d1a8628fb25ae1349e1e594ffb6c3783f2befcb8
+# hash:sha256:3872115565c6100f5e62e9e78db635321e5d391d828e11069152f611d37285f1
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/tensorflow:2.11-python3.10-cuda11.7.0-runtime-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -26,5 +26,5 @@ RUN conda install -y \
 
 RUN pip install -U --no-cache-dir \
     caveclient==5.10.1 \
-    nglui \
-    standard-transform
+    nglui==2.14.3 \
+    standard-transform==1.4.0
