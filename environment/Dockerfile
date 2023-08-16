@@ -1,4 +1,4 @@
-# hash:sha256:b977a746baa1c824a35a7dfb2c7b8d936cf0c179c7ede8f91c7f84d0aaf53f96
+# hash:sha256:3a6587473b981b5c8c669ef9d02d6d6bcb4f62eea5b706b103b2efb65d7be288
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -9,7 +9,7 @@ COPY git-askpass /
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        build-essential=12.9ubuntu3 \
+        build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 RUN conda install -y \
