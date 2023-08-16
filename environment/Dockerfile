@@ -1,4 +1,4 @@
-# hash:sha256:3bdbb5ebc93fbbde2072a8c1dd396d32cae1f3fdda07014adf4d89748bf8cef9
+# hash:sha256:e99182040434740b1375120b22e650af280841fd4ef1ca69708cad8328afb4e0
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/tensorflow:2.11-python3.10-cuda11.7.0-runtime-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -9,7 +9,7 @@ COPY git-askpass /
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        build-essential \
+        build-essential=12.9ubuntu3 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN conda install -y \
@@ -31,6 +31,6 @@ RUN conda install -y \
 
 RUN pip install -U --no-cache-dir \
     caveclient==5.10.1 \
-    meshparty \
+    meshparty==1.16.14 \
     nglui==2.14.3 \
     standard-transform==1.4.0
