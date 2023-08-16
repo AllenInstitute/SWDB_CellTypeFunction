@@ -1,4 +1,4 @@
-# hash:sha256:1b731c39b49e042da2554045020f88aba6111a000d233e7469aec3b1d5225c99
+# hash:sha256:3bdbb5ebc93fbbde2072a8c1dd396d32cae1f3fdda07014adf4d89748bf8cef9
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/tensorflow:2.11-python3.10-cuda11.7.0-runtime-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -7,11 +7,15 @@ ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
 
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN conda install -y \
         conda==23.3.1 \
     && conda clean -ya
 RUN conda install -y \
-        gcc_linux-64 \
         jupyter==1.0.0 \
         jupyterlab==4.0.2 \
         mamba==1.1.0 \
