@@ -1,5 +1,5 @@
-# hash:sha256:e99182040434740b1375120b22e650af280841fd4ef1ca69708cad8328afb4e0
-FROM registry.codeocean.allenneuraldynamics.org/codeocean/tensorflow:2.11-python3.10-cuda11.7.0-runtime-ubuntu22.04
+# hash:sha256:b977a746baa1c824a35a7dfb2c7b8d936cf0c179c7ede8f91c7f84d0aaf53f96
+FROM registry.codeocean.allenneuraldynamics.org/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
