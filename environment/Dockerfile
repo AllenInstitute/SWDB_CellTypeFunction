@@ -1,4 +1,4 @@
-# hash:sha256:b9ea1d32aa1197d8121f6a16dbefa0b9a5729048eae8a5e368354f487739360c
+# hash:sha256:96ecd3486cc3834f2d9467197e62d73943a9d93cf9ece1fabd6319a597077b20
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -18,7 +18,6 @@ RUN conda install -y \
 RUN conda install -y \
         jupyter==1.0.0 \
         jupyterlab \
-        mamba \
         matplotlib \
         notebook==6.5.4 \
         numpy \
