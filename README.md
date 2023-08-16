@@ -1,5 +1,8 @@
-# aind-capsule-template
+# SWDB Cell Types and Function
 
-Basic structure of a capsule, to be customized as needed.
+This repository covers concepts about exploring cell types and function using the MICrONS explorer dataset.
 
-#![test1](workshop2/images/cave_token.png)
+Workshop 1 covers unsupervised clustering techniques on high dimensional features to define cell types.
+
+Workshop 2 explores how functional correlation distributions change when looking between neurons of different cell types, 
+versus neurons that are synaptically connected. 

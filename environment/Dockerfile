@@ -1,4 +1,4 @@
-# hash:sha256:a3d487bf83c0f22a023af998efa0772df8f71434a78d7d1c3445cd15d5af0ed8
+# hash:sha256:206770c4e7f9043613ee5da2907f9cd42ccf06a230c72e18f9f28c3d9edc74f9
 FROM registry.codeocean.allenneuraldynamics.org/codeocean/tensorflow:2.11-python3.10-cuda11.7.0-runtime-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -15,6 +15,7 @@ RUN conda install -y \
         jupyterlab==4.0.2 \
         mamba==1.1.0 \
         matplotlib==3.7.2 \
+        nglui \
         notebook==6.5.4 \
         numpy==1.25.1 \
         pip==23.0 \
@@ -22,6 +23,7 @@ RUN conda install -y \
         scikit-learn==1.3.0 \
         seaborn==0.12.2 \
         setuptools==65.6.3 \
+        standard-transform \
     && conda clean -ya
 
 RUN pip install -U --no-cache-dir \
