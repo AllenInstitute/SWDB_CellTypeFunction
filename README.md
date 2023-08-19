@@ -1,5 +1,5 @@
 # SWDB_2023
-![SWDB_2023](/code/support_files/images/cropped-SummerWorkshop_Header.png)
+![SWDB_2023](/code/workshop1/resources/cropped-SummerWorkshop_Header.png)
 
 This is the repository for the Cell Types and Function tutorial for the 2023 Summer Workshop on the Dynamic Brain.
 
